@@ -1,12 +1,16 @@
 {
-  "name": "front-end",
+  "name": "front-end", 
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run start --filter=mobile"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "turbo": "^1.12.0"
+  }
 }
