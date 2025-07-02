@@ -1,5 +1,5 @@
 {
-  "name": "my-monorepo",
+  "name": "front-end",
   "private": true,
   "version": "1.0.0",
   "workspaces": [
