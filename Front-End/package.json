@@ -1,6 +1,13 @@
 {
-  "name": "Front-End",
+  "name": "my-monorepo",
+  "private": true,
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run start --filter=mobile"
+  }
 }
