@@ -14,10 +14,10 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://www.typescriptlang.org" target="_blank">
           <img src={typescriptLogo} className="logo typescript" alt="TypeScript logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://sass-lang.com" target="_blank">
           <img src={ScssLogo} className="logo scss" alt="SCSS logo" />
         </a>
         <a href="https://react.dev" target="_blank">
