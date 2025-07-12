@@ -6,20 +6,26 @@ export default function App() {
   return (
     <View style={styles.container}>
        <View style={styles.logoRow}>
-        <Pressable onPress={() => Linking.openURL('https://vite.dev')}>
-          <Text style={styles.heading}>Vite</Text>
+        <Pressable onPress={() => Linking.openURL('https://metrobundler.dev/')}>
+           <Image
+            source={require('./assets/metro.svg')}
+            style={styles.logo}
+          />
         </Pressable>
         <Pressable onPress={() => Linking.openURL('https://www.typescriptlang.org')}>
-          <Text style={styles.heading}>Typescript</Text>
+          <Image
+            source={require('./assets/typescript.svg')}
+            style={styles.logo}
+          />
         </Pressable>
-        <Pressable onPress={() => Linking.openURL('https://sass-lang.com')}>
-          <Text style={styles.heading}>Scss</Text>
-        </Pressable>
-        <Pressable onPress={() => Linking.openURL('https://react.dev')}>
-          <Text style={styles.heading}>React</Text>
+        <Pressable onPress={() => Linking.openURL('https://reactnative.dev/')}>
+          <Image
+            source={require('./assets/react.svg')}
+            style={styles.logo}
+          />
         </Pressable>
       </View>
-       <Text style={styles.heading}>Vite + (Typescript + Scss + React)</Text>
+       <Text style={styles.heading}>Metro + (Typescript + React)</Text>
 
       <View style={styles.card}>
         <Text style={styles.note}>
@@ -34,41 +40,6 @@ export default function App() {
     </View>
   );
 }
-/*
-import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  Image,
-  Pressable,
-  StyleSheet,
-  Linking,
-} from 'react-native';
-
-export default function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <View style={styles.container}>
-      <View style={styles.logoRow}>
-        <Pressable onPress={() => Linking.openURL('https://vite.dev')}>
-          <Image source={require('./assets/viteLogo.png')} style={styles.logo} />
-        </Pressable>
-        <Pressable onPress={() => Linking.openURL('https://www.typescriptlang.org')}>
-          <Image source={require('./assets/typescriptLogo.png')} style={styles.logo} />
-        </Pressable>
-        <Pressable onPress={() => Linking.openURL('https://sass-lang.com')}>
-          <Image source={require('./assets/scssLogo.png')} style={styles.logo} />
-        </Pressable>
-        <Pressable onPress={() => Linking.openURL('https://react.dev')}>
-          <Image source={require('./assets/reactLogo.png')} style={styles.logo} />
-        </Pressable>
-      </View>
-
-    
-    </View>
-  );
-}*/
 
 const styles = StyleSheet.create({
   container: { 
@@ -84,7 +55,7 @@ const styles = StyleSheet.create({
   logo: { 
     width: 50, 
     height: 50, 
-    margin: 4 
+    margin: 4
   },
   heading: { 
     fontSize: 22, 
